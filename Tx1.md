@@ -23,3 +23,6 @@ sudo tar xpf ../../Tegra_Linux_Sample-Root-Filesystem_R23.2.0_armhf.tbz2
 cd ../
 sudo ./apply_binaries.sh
 ```
+
+### Jetpack
+Go to [nvidia](https://developer.nvidia.com/embedded/downloads?#?dn=jetpack-for-l4t-2-1) to download latest jetpack, the file name should look like `JetPack-L4T-2.1-linux-x64.run`
