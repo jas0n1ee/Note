@@ -32,4 +32,7 @@ sudo ./apply_binaries.sh
 Download on board
 ```
 wget http://developer.nvidia.com/embedded/dlc/cuda-7-toolkit-l4t-23-2 -O cuda-repo-l4t-r23.1-7-0-local_7.0-73_armhf.deb
+sudo dpkg -i cuda-repo-l4t-r23.1-7-0-local_7.0-73_armhf.deb
+sudo apt-get -y update
+sudo apt-get -y install cuda
 ```
