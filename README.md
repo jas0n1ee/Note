@@ -1,8 +1,8 @@
 # Note
-Just some quick reference notes.
+Just some notes for quick reference.
 
-e.g.
-
-[Ubuntu OS](./Ubuntu.md)  
-[Nvidia Jetson Tx1 board](./Tx1.md)  
+[Caffe](./Caffe.md)  
+[Docker](./Docker.md)  
 [Google TensorFLow](./TensorFlow.md)  
+[Nvidia Jetson Tx1 board](./Tx1.md)  
+[OS-Ubuntu](./Ubuntu.md)  
