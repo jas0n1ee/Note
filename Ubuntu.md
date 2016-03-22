@@ -1,13 +1,17 @@
 # Ubuntu 14.04
+
+### Quick Links
+
+- [Static ip](##static-ip)
+
 ## Basic enviroment
 ```
 apt-get -y install vim yasm tmux htop
 apt-get -y install build-essential python-pip
 apt-get -y install apt-get install make cmake cmake-curses-gui libssl-dev libfdk-aac-dev
 ```
-## Nvidia Reletive
 
-### Login Loop
+### Login Loop after install/update nvidia driver
 try backup and move `.Xauthority`
 ```
 mv ~/.Xauthority ~/.Xauthority.backup
@@ -25,4 +29,14 @@ try reinstall nvidia-display-driver
 try reconfigure xserver-xorg
 ```
 sudo dpkg-reconfigure xserver-xorg
+```
+### Static ip
+```
+#/etc/network/interfaces
+auto eth0
+iface eth0 inet static
+address 0.0.0.0
+netmask 255.255.255.0
+gateway 0.0.0.0
+dns-nameservers 8.8.8.8 
 ```
