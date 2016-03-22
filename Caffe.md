@@ -56,3 +56,11 @@ index 0bc82b5..35aebd3 100644
 +//const size_t LMDB_MAP_SIZE = 1099511627776;  // 1 TB
 +const size_t LMDB_MAP_SIZE = 536870912; // 2^29. fix for Jetson TK1
 ```
+
+#### Mac Dependency
+```
+brew install --build-from-source --with-python -vd protobuf
+brew install -vd snappy leveldb gflags glog szip lmdb openblas
+```
+edit Makefile.config.example to remove GPU and customize using opencv 3.0  
+CMake is not recommand to use on Max OSX platform
