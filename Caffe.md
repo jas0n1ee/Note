@@ -20,3 +20,11 @@ cd caffe/build
 cmake ..
 sudo make -j install
 ```
+
+### Test installation
+```
+./data/mnist/get_mnist.sh
+./examples/mnist/create_mnist.sh
+# modify ./examples/mnist/lenet_solver.prototxt
+time ./examples/mnist/train_lenet.sh
+```
