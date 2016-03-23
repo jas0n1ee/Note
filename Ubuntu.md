@@ -1,8 +1,8 @@
 # Ubuntu 14.04
 
 ### Quick Links
-
-- [Static ip](##static-ip)
+- [Login Loop](#login-loop)
+- [Static ip](#static-ip)
 
 ## Basic enviroment
 ```
@@ -11,7 +11,8 @@ apt-get -y install build-essential python-pip
 apt-get -y install apt-get install make cmake cmake-curses-gui libssl-dev libfdk-aac-dev
 ```
 
-### Login Loop after install/update nvidia driver
+### Login Loop 
+after install/update nvidia driver
 try backup and move `.Xauthority`
 ```
 mv ~/.Xauthority ~/.Xauthority.backup
