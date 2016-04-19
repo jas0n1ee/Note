@@ -3,6 +3,7 @@
 ### Quick Links
 - [Login Loop](#login-loop)
 - [Static ip](#static-ip)
+- [Correct date](#correct-date)
 
 ## Basic enviroment
 ```
@@ -41,3 +42,15 @@ netmask 255.255.255.0
 gateway 0.0.0.0
 dns-nameservers 8.8.8.8 
 ```
+
+### Correct date
+
+```bash
+#set date
+sudo date --set="STRING"
+#check hardware current time
+sudo hwclock -r
+#if necessary, sync hardware to current time
+sudo hwclock --systohc
+```
+
