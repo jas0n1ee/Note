@@ -58,6 +58,7 @@ sudo hwclock --systohc
 ### Wireless tools
 ```bash
 sudo apt-get install iw
+sudo apt-get install linux-firmware
 
 #create a wpa_supplicant config
 wpa_passphrase SSID_NAME
