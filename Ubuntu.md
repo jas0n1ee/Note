@@ -4,6 +4,7 @@
 - [Login Loop](#login-loop)
 - [Static ip](#static-ip)
 - [Correct date](#correct-date)
+- [Wireless tools](#wireless-tools)
 
 ## Basic enviroment
 ```
@@ -52,5 +53,21 @@ sudo date --set="STRING"
 sudo hwclock -r
 #if necessary, sync hardware to current time
 sudo hwclock --systohc
+```
+
+### Wireless tools
+```bash
+sudo apt-get install iw
+
+#create a wpa_supplicant config
+wpa_passphrase SSID_NAME
+#then enter passwd
+
+#try to connect to wifi
+sudo wpa_supplicant -iwlan0 -c /etc/wpa_supplicant.conf 
+
+#try to get ip
+sudo dhclient -v -r wlan0
+sudo dhclient -v wlan0
 ```
 
