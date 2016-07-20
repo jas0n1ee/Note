@@ -63,4 +63,6 @@ brew install --build-from-source --with-python -vd protobuf
 brew install -vd snappy leveldb gflags glog szip lmdb openblas
 ```
 edit Makefile.config.example to remove GPU and customize using opencv 3.0  
-CMake is not recommand to use on Max OSX platform
+CMake is not recommand to use on Max OSX platform  
+You may find python include/lib direcoty path is something like this:
+`/usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/include/python2.7/`
