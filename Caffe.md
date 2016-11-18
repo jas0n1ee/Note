@@ -66,3 +66,25 @@ edit Makefile.config.example to remove GPU and customize using opencv 3.0
 CMake is not recommand to use on Max OSX platform  
 You may find python include/lib direcoty path is something like this:
 `/usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/include/python2.7/`
+
+
+#### Installing on 16.04 (may or may not be true)
+```
+#opencv dependency
+#change Makefile line ~164
+LIBRARIES += glog gflags protobuf leveldb snappy \
+  lmdb boost_system hdf5_hl hdf5 m \
+  opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs
+```
+```
+#hdf5
+#Edit Makefile.conf
+PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
+
+WITH_PYTHON_LAYER := 1
+
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
+```
+See [here](https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide)for more details.
